@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<body>
+    @{
+        Homi.Models.modelLayOut mLO;
+    }
+
+    {
+    <input type="submit" name="Save" value="Save" />
+    <input type="submit" name="Publish" value="Publish" />
+    }
+    @using (Html.BeginForm("someAction", "someController"))
+    {
+        <button type="submit">OK</button>
+    }
+    <input type="button" title="Delete" value="D" onclick=mLO.getAdminUsername("ll") />
+</html>
+
+
